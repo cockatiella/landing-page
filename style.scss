@@ -1,0 +1,110 @@
+
+
+//animation
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+//NAV BAR
+
+nav {
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: $dark;
+  }
+  p {
+    color: $primary;
+    font-weight: bold;
+  }
+
+  .btn {
+    background: $primary;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+  
+  }
+}
+
+//Hero section
+
+.hero {
+  h1 {
+    color: $dark;
+    font-weight: bold;
+  }
+  p {
+    color: $sub;
+  }
+  .btn {
+    background: $primary;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 15px;
+  }
+}
+
+//rectangle
+
+.rectangle {
+  .rectangle-1 {
+    height: 20em;
+    background: linear-gradient(180deg, #757474 0%, #fffcfc 100%);
+  }
+  .rectangle-2 {
+    background: linear-gradient(
+      182.04deg,
+      #0db6db 26.58%,
+      rgba(11, 181, 219, 0) 98.28%
+    );
+    text-align: right;
+  }
+  .card,
+  .card-2 {
+    width: 200px;
+    height: 300px;
+    background: #fffcfc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 49px;
+    display: inline-block;
+  }
+
+  .card:hover,
+  .card-2:hover {
+    animation: myAnim 0.2s ease 0s 1 normal forwards;
+  }
+  .avatar {
+    border-radius: 50%;
+    border: 3px solid $primary;
+  }
+  h4 {
+    color: $primary;
+    font-weight: 600;
+    padding: 2px;
+  }
+  .lorem {
+    color: $sub;
+    padding: 20px;
+  }
+
+  .title {
+    color: $sub;
+    font-size: 18px;
+  }
+}
+
+
